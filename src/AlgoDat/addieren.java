@@ -11,6 +11,8 @@ public class addieren {
 
         char[] array1 = new char[Zahl1.length()];
         char[] array2 = new char[Zahl2.length()];
+        int[] result = new int[array1.length];
+
 
         for (int i = 0; i < Zahl1.length(); i++) {
             array1[i] = Zahl1.charAt(i);
@@ -18,8 +20,26 @@ public class addieren {
         for (int i = 0; i < Zahl2.length(); i++) {
             array2[i] = Zahl2.charAt(i);
         }
+        int[] Intarray1 = new int[array1.length];
+        int[] Intarray2 = new int[array2.length];
 
-        //int number = Integer.parseInt(str);
+        for (int i=0;i< array1.length;i++){
+            Intarray1[i] = Integer.parseInt(String.valueOf(array1[i]));
+        }
+
+        for (int i = array1.length -1; i <=0; i--) {
+            result[i]= Intarray1[i] + Intarray2[i];
+
+        }
+
+
+
+
+
+        for (int i=0;i< array1.length;i++){
+            System.out.println(result[i]);
+        }
+
 
     }
 }
