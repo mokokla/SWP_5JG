@@ -33,9 +33,6 @@ public class addieren {
         }
 
 
-
-
-
         for (int i=0;i< array1.length;i++){
             System.out.println(result[i]);
         }
