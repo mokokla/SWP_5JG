@@ -22,11 +22,30 @@ public class linkedList implements HTLlist {
 
     @Override
     public int get(int index) {
+
         return -1;
     }
 
     @Override
     public void remove(int index) {
-
+        Node n = new Node(4);
+        if (root==null){
+            root = n;
+        } else{
+            Node actual = root;
+            while (actual.getNext()!=null){
+                actual = actual.getNext();
+            }
+            actual.setNext(n);
+        }
+        if (root==null){
+            root = n;
+        } else{
+            Node actual = root;
+            while (actual.getNext()!=null){
+                actual = actual.getNext();
+            }
+            actual.setNext(n);
+        }
     }
 }
