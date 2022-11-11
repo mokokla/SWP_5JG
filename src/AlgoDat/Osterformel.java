@@ -3,7 +3,7 @@ package AlgoDat;
 public class Osterformel {
     public static void main(String[] args) {
         int N =0;
-        int J = 2022;
+        int J = 37;
         int A = 0;
         int B =0;
         int M =0;
