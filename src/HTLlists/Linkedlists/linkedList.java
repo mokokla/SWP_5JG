@@ -45,7 +45,10 @@ public class linkedList implements HTLlist {
             while (actual.getNext()!=null){
                 actual = actual.getNext();
             }
-            actual.setNext(n);
+            if(root==actual){
+                actual.
+            }
+
         }
     }
 }
