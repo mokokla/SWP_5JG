@@ -28,27 +28,23 @@ public class linkedList implements HTLlist {
 
     @Override
     public void remove(int index) {
+        Node actual = root;
+        Node previous = root;
         Node n = new Node(4);
+
+
         if (root==null){
-            root = n;
-        } else{
-            Node actual = root;
-            while (actual.getNext()!=null){
-                actual = actual.getNext();
-            }
-            actual.setNext(n);
+            return;
+        } else if (root.getNext()==null){
+            root.setNext(root.getNext());
         }
-        if (root==null){
-            root = n;
-        } else{
-            Node actual = root;
-            while (actual.getNext()!=null){
-                actual = actual.getNext();
-            }
-            if(root==actual){
-                actual.
-            }
+        for (int i = 0; i < index; i++) {
+            previous = actual;
+            actual = actual.getNext();
+        }
+        previous.setNext(actual.getNext());
+       // actual.setNext(actual.getNext().getNext());
 
         }
     }
-}
+
